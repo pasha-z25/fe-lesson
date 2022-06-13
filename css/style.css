@@ -1,0 +1,128 @@
+.header {
+    background-color: #F9F7E8;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.logo {
+    font-family: 'Courgette', cursive;
+    font-size: 32px;
+    line-height: 40px;
+    margin-right: 80px;
+}
+.logo .color {
+    color: #62BFAD;
+}
+.nav {
+    display: inline-block;
+}
+.nav-link {
+    font-family: Lato, sans-serif;
+}
+.nav-link + .nav-link {
+    margin-left: 20px;
+}
+
+/*--------------------------------------------------*/
+.first-screen {
+    padding-top: 198px;
+    padding-bottom: 172px;
+    background-color: #D52047;
+    color: #FFFFFF;
+}
+.main-title {
+    font-family: 'Limelight', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------------------------------------------*/
+
+.about-block {
+    padding-top: 95px;
+    padding-bottom: 80px;
+    background-color: #EFF8F6;
+}
+.section-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #D52047;
+}
+.about-block .wrapper {
+    display: flex;
+}
+.about-block .wrapper .part {
+    display: inline-block;
+    width: 49.5%;
+}
+.about-block .wrapper .part-1 {
+    padding: 1.5rem;
+    background: #E5E5E5;
+    border-radius: 8px 0 0 8px;
+}
+.secondary-title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 1.5rem;
+}
+.about-block .wrapper .part-1 .description {
+    font-size: 24px;
+    line-height: 29px;
+}
+.about-block .wrapper .part-1 img {
+    display: block;
+}
+/*------------------------------------------*/
+.features-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.features-block .card + .card {
+    margin-left: 68px;
+}
+
+.features-block .card {
+    display: inline-block;
+    width: 100%;
+    max-width: 322px;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+.features-block .card img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.features-block .card .description {
+    margin-bottom: 1.5rem;
+}
+.features-block .card .link {
+    color: red;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------*/
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #F9F7E8;
+    text-align: center;
+}
+.footer .copy {
+    margin-bottom: 1.5rem;
+}
+
+.footer .social-link:hover svg path {
+    fill: #D52047;
+}
+
+.footer .social-link + .social-link {
+    margin-left: 1rem;
+}
