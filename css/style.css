@@ -107,6 +107,10 @@ body {
 /*--------------------------------------------------------------------*/
 .content {
     padding-top: 80px;
+    padding-bottom: 40px;
+}
+.last-content {
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 .card-wrapper .card-item {
@@ -129,7 +133,6 @@ body {
 .contacts-wrapper {
     margin-top: 100px;
     margin-bottom: 100px;
-
 }
 .contacts-wrapper .contact-card {
     background-color: var(--color-red);
@@ -166,7 +169,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
-    margin-bottom: 80px;
 }
 .partners-wrapper .item {
     flex: 1;

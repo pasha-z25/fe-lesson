@@ -10,6 +10,21 @@
   <link rel="shortcut icon" type="image/x-icon" href="./images/icons/favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
+  <script>
+    function scrollToElem(elem) {
+      event.preventDefault()
+      const target = document.querySelector(elem.hash)
+
+      console.dir(elem)
+      console.dir(target)
+      console.log(target.offsetTop)
+
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth"
+      })
+    }
+  </script>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -17,9 +32,9 @@
     <div class="up-level">
       <div class="container">
         <nav class="nav flex items-center justify-center gap-30">
-          <a href="#first-screen" class="nav-link">Доставка</a>
-          <a href="#second" class="nav-link">Оплата</a>
-          <a href="#third" class="nav-link">Отзывы</a>
+          <a href="#first-screen" class="nav-link" onclick="scrollToElem(this)">Доставка</a>
+          <a href="#second" class="nav-link" onclick="scrollToElem(this)">Оплата</a>
+          <a href="#third" class="nav-link" onclick="scrollToElem(this)">Отзывы</a>
           <a href="#" class="nav-link">Вопрос - ответ</a>
           <a href="#" class="nav-link">Контакты</a>
         </nav>
@@ -62,9 +77,9 @@
         </div>
       </div>
     </section>
-    <section class="content">
+    <section id="second" class="content">
       <div class="container">
-        <h2 id="second" class="section-title">Специальные предложения</h2>
+        <h2 class="section-title">Специальные предложения</h2>
         <div class="card-wrapper flex gap-30">
           <div class="card-item">
             <img src="./images/chair.png" alt="chair" class="card-image">
@@ -155,7 +170,11 @@
             <img src="./images/partner.png" alt="partner">
           </div>
         </div>
-        <h2 id="third" class="section-title">Вы недавно смотрели</h2>
+      </div>
+    </section>
+    <section id="third"  class="last-content">
+      <div class="container">
+        <h2 class="section-title">Вы недавно смотрели</h2>
         <div class="card-wrapper flex gap-30">
           <div class="card-item">
             <img src="./images/chair.png" alt="chair" class="card-image">
@@ -277,8 +296,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="./js/script.js"></script>
 </body>
 
 </html>
