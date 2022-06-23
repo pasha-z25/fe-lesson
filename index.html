@@ -14,11 +14,6 @@
     function scrollToElem(elem) {
       event.preventDefault()
       const target = document.querySelector(elem.hash)
-
-      console.dir(elem)
-      console.dir(target)
-      console.log(target.offsetTop)
-
       window.scrollTo({
         top: target.offsetTop,
         behavior: "smooth"
